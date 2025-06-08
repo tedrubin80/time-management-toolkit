@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://tedrubin80.github.io/time-management-toolkit",
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "node": "18.19.0",
+    "npm": "10.2.3"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
