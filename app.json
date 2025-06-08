@@ -1,0 +1,31 @@
+{
+  "name": "time-management-toolkit",
+  "description": "A comprehensive time management and boundary setting toolkit",
+  "repository": "https://github.com/tedrubin80/time-management-toolkit",
+  "logo": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg",
+  "keywords": ["time-management", "productivity", "react", "toolkit"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "value": "false",
+      "description": "Allow devDependencies to be installed for build process"
+    },
+    "NODE_ENV": {
+      "value": "production"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "addons": [],
+  "scripts": {
+    "postdeploy": "echo 'App deployed successfully!'"
+  }
+}

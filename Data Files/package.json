@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://tedrubin80.github.io/time-management-toolkit",
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "node": "18.x",
+    "npm": "9.x"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,14 +19,13 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve -s build -p $PORT",
-    "build": "react-scripts build && echo 'Build completed successfully'",
+    "start": "serve -s build -l $PORT",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "heroku-postbuild": "npm run build",
-    "heroku-cleanup": "npm prune --production"
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,22 +50,5 @@
     "tailwindcss": "^3.3.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24"
-  },
-  "keywords": [
-    "time-management",
-    "productivity",
-    "react",
-    "toolkit",
-    "boundary-setting",
-    "decision-making"
-  ],
-  "author": "tedrubin80",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tedrubin80/time-management-toolkit.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tedrubin80/time-management-toolkit/issues"
   }
 }
