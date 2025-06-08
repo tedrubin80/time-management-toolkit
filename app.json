@@ -14,6 +14,18 @@
       "value": "false",
       "description": "Allow devDependencies to be installed for build process"
     },
+    "NPM_CONFIG_LEGACY_PEER_DEPS": {
+      "value": "true",
+      "description": "Enable legacy peer deps to resolve React 18 conflicts"
+    },
+    "NPM_CONFIG_FUND": {
+      "value": "false",
+      "description": "Disable funding messages during install"
+    },
+    "NPM_CONFIG_AUDIT": {
+      "value": "false",
+      "description": "Disable audit during install for faster builds"
+    },
     "NODE_ENV": {
       "value": "production"
     }

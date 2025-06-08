@@ -1,0 +1,28 @@
+# NPM Configuration for Time Management Toolkit
+# Fixes peer dependency conflicts and React compatibility issues
+
+# Enable legacy peer deps to bypass strict peer dependency checks
+legacy-peer-deps=true
+
+# Set registry (use default npm registry)
+registry=https://registry.npmjs.org/
+
+# Reduce dependency resolution conflicts
+fund=false
+audit=false
+
+# Optimize for Heroku builds
+prefer-offline=false
+cache-max=3600
+
+# Enable exact versions for better reproducibility
+save-exact=false
+save-prefix="^"
+
+# Reduce noise during install
+loglevel=warn
+progress=false
+
+# Handle React 18 compatibility
+# force=false
+# strict-peer-deps=false
