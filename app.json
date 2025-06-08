@@ -1,9 +1,17 @@
 {
   "name": "time-management-toolkit",
-  "description": "A comprehensive time management and boundary setting toolkit",
+  "description": "A comprehensive time management and boundary setting toolkit to help you master your workload and learn to say no with confidence",
   "repository": "https://github.com/tedrubin80/time-management-toolkit",
   "logo": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg",
-  "keywords": ["time-management", "productivity", "react", "toolkit"],
+  "keywords": [
+    "time-management",
+    "productivity", 
+    "react",
+    "toolkit",
+    "boundary-setting",
+    "decision-making",
+    "nodejs"
+  ],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
@@ -27,7 +35,16 @@
       "description": "Disable audit during install for faster builds"
     },
     "NODE_ENV": {
-      "value": "production"
+      "value": "production",
+      "description": "Set Node environment to production"
+    },
+    "GENERATE_SOURCEMAP": {
+      "value": "false",
+      "description": "Disable source maps for smaller build size"
+    },
+    "SKIP_PREFLIGHT_CHECK": {
+      "value": "true",
+      "description": "Skip preflight dependency checks"
     }
   },
   "formation": {
@@ -38,6 +55,9 @@
   },
   "addons": [],
   "scripts": {
-    "postdeploy": "echo 'App deployed successfully!'"
-  }
+    "postdeploy": "echo 'Time Management Toolkit deployed successfully to Heroku!'"
+  },
+  "stack": "heroku-22",
+  "success_url": "/",
+  "website": "https://tedrubin80.github.io/time-management-toolkit"
 }

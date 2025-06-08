@@ -28,7 +28,8 @@
     "heroku-postbuild": "npm install --legacy-peer-deps && npm run build",
     "heroku-cleanup": "npm prune --production",
     "install-legacy": "npm install --legacy-peer-deps",
-    "build-legacy": "npm run install-legacy && npm run build"
+    "build-legacy": "npm run install-legacy && npm run build",
+    "fix-deps": "./fix-dependencies.sh"
   },
   "eslintConfig": {
     "extends": [
